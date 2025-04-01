@@ -467,21 +467,21 @@ function App() {
     {
       title: "Text-to-Image Generation Website",
       description: "Engineered a full-stack AI image generation web application using MERN stack .",
-      image: "/public/p1.jpg",
+      image: "/p1.jpg",
       technologies: ["React", "Node.js", "MongoDB", "ClipDrop API"],
       github: "https://github.com/Harsha120903/Text-Image-Generation-AI-website",
     },
     {
       title: "React-Based Post Management",
       description: "Designed a React application with routing to manage posts using DummyJSON API integration.",
-      image: "/public/p2.jpg",
+      image: "/p2.jpg",
       technologies: ["React", "JavaScript", "DummyJSON API"],
       github: "https://github.com/Harsha120903/Add-View-Post-React-",
     },
     {
       title: "Heart Failure Prediction",
       description: "Built a ML-based heart failure prediction model with 95% accuracy, deployed using Streamlit.",
-      image: "/public/p3.jpg",
+      image: "/p3.jpg",
       technologies: ["Python", "Scikit-learn", "Streamlit", "Random Forest"],
       github: "https://github.com/Harsha120903/heart_failure_prediction",
       demo: "https://heartfailureprediction-de2wmdtb7cz6zdcfbewx8j.streamlit.app/"
@@ -703,7 +703,7 @@ function App() {
                   Detailed overview of my academic journey, projects, and technical skills.
                 </p>
                 <a 
-                  href="/public/Harsha_Resume.pdf" 
+                  href="/Harsha_Resume.pdf" 
                   className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
                 >
                   <Download className="w-5 h-5" />
