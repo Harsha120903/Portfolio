@@ -659,68 +659,88 @@ function App() {
 
       {/* Resume Section */}
       <section id="resume" className={`py-20 ${darkMode ? 'bg-gray-800' : 'bg-white'} px-4`}>
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center gap-2 mb-8">
-            <FileText className="w-6 h-6 text-blue-600" />
-            <h2 className={`text-3xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>Resume</h2>
-          </div>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <div className="flex items-center gap-2 mb-6">
-                <Briefcase className="w-5 h-5 text-blue-600" />
-                <h3 className={`text-xl font-semibold ${darkMode ? 'text-white' : 'text-gray-900'}`}>Experience</h3>
-              </div>
-              <div className="space-y-6">
-                {[
-                  {
-                    title: "AI-ML Virtual Internship",
-                    company: "AICTE Certified",
-                    period: "Sep-Nov 2023",
-                    description: "Gained hands-on experience in AI and ML concepts, data preprocessing, feature engineering, and model deployment."
-                  }
-                ].map((job, index) => (
-                  <div key={index} className={`${darkMode ? 'bg-gray-700' : 'bg-gray-50'} p-6 rounded-lg`}>
-                    <h4 className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>{job.title}</h4>
-                    <p className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} mb-2`}>{job.company} • {job.period}</p>
-                    <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>{job.description}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-6">
-                <h3 className={`text-lg font-semibold ${darkMode ? 'text-white' : 'text-gray-900'} mb-4`}>Academic Achievements</h3>
-                <div className={`${darkMode ? 'bg-gray-700' : 'bg-gray-50'} p-4 rounded-lg`}>
-                  <ul className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} space-y-2`}>
-                    <li>Runner-up in Code Breakers (Promethean Event-2022)</li>
-                    <li>Participation in BVRIT-MUN (DISEC)</li>
-                  </ul>
-                </div>
-              </div>
+  <div className="max-w-6xl mx-auto">
+    <div className="flex items-center gap-2 mb-8">
+      <FileText className="w-6 h-6 text-blue-600" />
+      <h2 className={`text-3xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>Resume</h2>
+    </div>
+    <div className="grid md:grid-cols-2 gap-12">
+      {/* Left Column */}
+      <div>
+        <div className="flex items-center gap-2 mb-6">
+          <Briefcase className="w-5 h-5 text-blue-600" />
+          <h3 className={`text-xl font-semibold ${darkMode ? 'text-white' : 'text-gray-900'}`}>Experience</h3>
+        </div>
+        <div className="space-y-6">
+          {[
+            {
+              title: "AI-ML Virtual Internship",
+              company: "AICTE Certified",
+              period: "Sep-Nov 2023",
+              description: "Gained hands-on experience in AI and ML concepts, data preprocessing, feature engineering, and model deployment."
+            }
+          ].map((job, index) => (
+            <div key={index} className={`${darkMode ? 'bg-gray-700' : 'bg-gray-50'} p-6 rounded-lg`}>
+              <h4 className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>{job.title}</h4>
+              <p className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} mb-2`}>{job.company} • {job.period}</p>
+              <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>{job.description}</p>
             </div>
-            <div className="flex flex-col justify-between">
-              <div>
-                <h3 className={`text-xl font-semibold ${darkMode ? 'text-white' : 'text-gray-900'} mb-4`}>Download Resume</h3>
-                <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} mb-6`}>
-                  Detailed overview of my academic journey, projects, and technical skills.
-                </p>
-                <a 
-                  href="/Harsha_Resume.pdf" 
-                  className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
-                >
-                  <Download className="w-5 h-5" />
-                  Download PDF
-                </a>
-              </div>
-              <div className={`${darkMode ? 'bg-gray-700' : 'bg-gray-50'} p-6 rounded-lg mt-8`}>
-                <h4 className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-4`}>Extra-Curricular</h4>
-                <ul className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} space-y-2`}>
-                  <li>Club Lead, English Readers Club (2023-2024)</li>
-                  <li>IEEE Department Coordinator (2025-Present)</li>
-                </ul>
-              </div>
-            </div>
+          ))}
+        </div>
+        <div className="mt-6">
+          <h3 className={`text-lg font-semibold ${darkMode ? 'text-white' : 'text-gray-900'} mb-4`}>Academic Achievements</h3>
+          <div className={`${darkMode ? 'bg-gray-700' : 'bg-gray-50'} p-4 rounded-lg`}>
+            <ul className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} space-y-2`}>
+              <li>Runner-up in Code Breakers (Promethean Event-2022)</li>
+              <li>Participation in BVRIT-MUN (DISEC)</li>
+            </ul>
           </div>
         </div>
-      </section>
+        <div className={`${darkMode ? 'bg-gray-700' : 'bg-gray-50'} p-6 rounded-lg mt-8`}>
+          <h4 className={`font-bold ${darkMode ? 'text-white' : 'text-gray-900'} mb-4`}>Extra-Curricular</h4>
+          <ul className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} space-y-2`}>
+            <li>Club Lead, English Readers Club (2023-2024)</li>
+            <li>IEEE Department Coordinator (2025-Present)</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Right Column */}
+      <div className="flex flex-col justify-between">
+        <div>
+          <h3 className={`text-xl font-semibold ${darkMode ? 'text-white' : 'text-gray-900'} mb-4`}>Download Resume</h3>
+          <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} mb-6`}>
+            Detailed overview of my academic journey, projects, and technical skills.
+          </p>
+          <a 
+            href="/Harsha_Resume.pdf" 
+            className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+          >
+            <Download className="w-5 h-5" />
+            Download PDF
+          </a>
+        </div>
+
+        {/* ✅ Resume Video Section */}
+        <div className="mt-8">
+          <h3 className={`text-xl font-semibold ${darkMode ? 'text-white' : 'text-gray-900'} mb-4`}>
+            Resume Explanation Video
+          </h3>
+          <video
+            controls
+            className="w-full max-w-3xl mx-auto rounded-lg shadow-lg"
+          >
+            <source src="/Resume-explanation.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+       
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Contact Section */}
       <section id="contact" className={`py-20 ${darkMode ? 'bg-gray-900' : 'bg-white'} px-4`}>
