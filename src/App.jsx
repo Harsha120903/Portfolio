@@ -583,7 +583,6 @@ function App() {
                   <li>International Conference on Artificial Intelligence</li>
                   <li>The Joy of Computing with Python</li>
                   <li>Programming in Java</li>
-                  <li>Problem Solving Through Programming in C</li>
                   <li>Soft Skills</li>
                 </ul>
               </div>
