@@ -470,13 +470,14 @@ function App() {
       image: "/p1.jpg",
       technologies: ["React", "Node.js", "MongoDB", "ClipDrop API"],
       github: "https://github.com/Harsha120903/Text-Image-Generation-AI-website",
+      demo:"https://text-image-generation-ai-website-frontend.onrender.com/"
     },
     {
       title: "React-Based Post Management",
       description: "Designed a React application with routing to manage posts using DummyJSON API integration.",
       image: "/p2.jpg",
       technologies: ["React", "JavaScript", "DummyJSON API"],
-      github: "https://github.com/Harsha120903/Add-View-Post-React-",
+      github: "https://github.com/Harsha120903/Add-View-Post-React-"
     },
     {
       title: "Heart Failure Prediction",
