@@ -457,9 +457,9 @@ function App() {
   }, [darkMode]);
 
   const skills = [
-    { category: "Technical", items: ["React", "Redux", "Node.js", "Express"] },
+    { category: "Technical", items: ["Java","FullStack - (MERN)"] },
     { category: "Databases", items: ["MongoDB", "MySQL"] },
-    { category: "Tools", items: ["Git", "GitHub", "Scikit-learn"] },
+    { category: "Tools", items: ["Git", "GitHub"] },
     { category: "Other", items: ["Machine Learning", "Problme Solving Skills"] }
   ];
 
@@ -580,6 +580,7 @@ function App() {
               <div className={`${darkMode ? 'bg-gray-700' : 'bg-gray-50'} p-4 rounded-lg`}>
                 <ul className={`${darkMode ? 'text-gray-300' : 'text-gray-600'} space-y-2`}>
                   <li>AI-ML Virtual Internship (AICTE)</li>
+                  <li>International Conference on Artificial Intelligence</li>
                   <li>The Joy of Computing with Python</li>
                   <li>Programming in Java</li>
                   <li>Problem Solving Through Programming in C</li>
@@ -730,7 +731,7 @@ function App() {
             controls
             className="w-full max-w-3xl mx-auto rounded-lg shadow-lg"
           >
-            <source src="/Resume-explanation.mp4" type="video/mp4" />
+            <source src="/Resume-.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
