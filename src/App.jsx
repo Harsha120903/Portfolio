@@ -646,7 +646,7 @@ function App() {
                       <Github className="w-4 h-4" />
                       Code
                     </a>
-                    <a href={project.demo} className={`flex items-center gap-1 ${darkMode ? 'text-blue-400 hover:text-blue-300' : 'text-blue-600 hover:text-blue-700'}` }>
+                    <a href={project.demo} className={`flex items-center cursor-pointer gap-1 ${darkMode ? 'text-blue-400 hover:text-blue-300' : 'text-blue-600 hover:text-blue-700'}` }>
                       <ExternalLink className="w-4 h-4" />
                       Live Demo
                     </a>
